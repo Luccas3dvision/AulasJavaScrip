@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>meusite</title>
+    <!-- chama css-->
+    <link rel="stylesheet" href="ex10style.css">
+</head>
+<body>
+    <!-- trabalhando com valors inputs-->
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" name="somar" value="somar" onclick="somar()">
+        <input type="button" name="somar" value="subitrair" onclick="somar()">
+        <input type="button" name="somar" value="dividir" onclick="somar()">
+        <input type="button" name="somar" value="multiplicar" onclick="somar()">
+        <div id="res">resultado</div>
+<script>
+    function somar() {
+        /* chamndo variavel dos inputs numericos*/
+        var txtn1 = window.document.getElementById('txtn1')
+        var txtn2 = window.document.querySelector('input#txtn2')
+        /* defininco resultado dos inputs */
+        var res = window.document.getElementById('res')
+        /*  funcao para resultado ANTECAO EM LETRAS MAIUSCULAS E MINUSCULAS*/
+        var n1 = Number(txtn1.value)
+        var n2 = Number(txtn2.value)
+        var s = n1 + n2
+        /* mostar resultado NO HTML*/
+        res.innerHTML = 'Seu resultado é  '+ s  
+    }
+
+</script>
+</body>
+
+</html>

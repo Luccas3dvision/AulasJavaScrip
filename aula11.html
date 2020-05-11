@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1> <input type="number" id="velocidade" name="velocidade" placeholder="Digite aqui">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id='res'>
+        Resultado
+    </div>
+<script>
+    
+
+    function verificar() {
+        /* chama o valor colocado na input*/
+        var velocidade = document.querySelector('input#velocidade')
+        /* define variavel como numero */
+        var vel = Number(velocidade.value)
+        /* caminho para mostrar resultado*/
+        var res = document.querySelector('div#res')
+        /*e fim resultado*/
+        res.innerHTML = 'Sua velocidade atual ' + vel
+        if (vel > 60 ) {
+        res.innerHTML += '<p>Voce foi multado</p>'
+        }
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula  passos com DOM</title>
+    <style>
+        body {
+            background-color:rgb(0, 0, 0);
+            text-align: center;
+            }
+        
+        h1 {
+        color: #3cff00;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+        }
+        p {
+            color: #3cff00;
+            font-style: italic solid;
+        }
+        
+          /* IDs */
+
+    </style>
+</head>
+<body>
+    <div id="container">    
+        <h1>Operando DOM</h1>
+        <p>Meu primeiro teste com ,<strong>DOM</strong> pelo visual code</p>
+        <p>Meu segundo paragrafo de texto</p>
+        <p id="div1">Texto replicado com JavaScrip</p>
+    </div>
+    <script>
+        // onde cai o javaScrip
+    // variaveis 
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var h1 = window.document.getElementsByTagName('h1')[0]
+    var txt1 = window.document.getElementById('div1')
+    // prints e funcoes 
+    window.document.write('Sua dive aqui' + div1)
+
+    window.document.writeln('esta escrito assim ' + p1.innerHTML)
+
+    window.document.writeln('Dados da a1 >>>> ' + h1.innerHTML)
+    
+    // formatacao das dvis e afins
+    div1.style.color = "red"
+    p1.style.fontSize = '50px' // comando para todos os P paragrafos
+    p1.style.border = "solid green"
+    </script>
+</body>
+</html>

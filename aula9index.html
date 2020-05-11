@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="divarea">
+        <p>O que..</p>
+    </div>
+    <script>
+        /* Variaveis fora*/
+        var area = window.document.getElementById('divarea')
+        /* acressentando eventos */
+        area.addEventListener('click', clicar) 
+        area.addEventListener('mouseenter', entrar) 
+        area.addEventListener('mouseaut', sair) 
+        
+        /* correspondente a acao*/
+        function clicar() {
+            area.innerText = 'Mude'
+            area.style.background = 'black'
+            area.style.color = 'greenyellow'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+        }
+        function sair() {
+            area.innerText = 'Mudando'
+        }
+
+
+    </script>
+</body>
+</html>
